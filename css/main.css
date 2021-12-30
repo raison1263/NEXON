@@ -1,0 +1,1437 @@
+@charset "utf-8";
+
+.row 
+{
+    width: 1360px;
+    margin: 0 auto;
+}
+
+/* 베너 시작 */
+.slideOuter 
+{
+    width: 100%;
+    height: 30vw;
+    overflow: hidden;
+    z-index: 50;
+    position: relative;
+}
+
+.slideOuter .slide 
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vw; 
+
+}
+
+.slideOuter a .slide_img 
+{
+    position: relative;
+    z-index: 1;
+}
+
+.slideOuter a .slide_text 
+{
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+}
+
+/* 첫번째 배너 */
+.slideOuter .slide1 a .slide_img 
+{
+    background-image: url(../img/V8gt21192032800.jpg);
+}
+
+.slideOuter .slide1 a .slide_text 
+{
+    background-image: url(../img/AACM21192033652.png);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+/* .slideOuter .slide1 .vid
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 555;
+    background: red;
+    width: 500px;
+    height: 300px;
+}
+
+.slideOuter .slide1 .vid video
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 700;
+}  */
+
+/* 두번째 배너 */
+.slideOuter .slide2 a .slide_img 
+{
+    background-image: url(../img/1y7I15144418457.png);
+    position: relative;
+    z-index: 1;
+}
+
+/* 세번째 배너 */
+.slideOuter .slide3 a .slide_img 
+{
+    background-image: url(../img/zzyw21195742060.jpg);
+}
+
+.slideOuter .slide3 a .slide_text 
+{
+    background-image: url(../img/eWTN21195742845.png);
+    position: absolute;
+    top: 5%;
+    left: 18%;
+    width: 100%;
+    height: 100%;
+}
+
+/* 네번째 배너 */
+.slideOuter .slide4 a .slide_img 
+{
+    background-image: url(../img/Bzhg21174725972.jpg);
+}
+
+/* 배너 숫자 */
+.slide_num
+{
+    width: 1000px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 50;
+    transform: translate(-50%, 0);
+
+    /* background: lime; */
+}
+
+.slide_num ul li
+{
+    float: left;
+    width: 250px;
+    height: 80px;
+    transition: all 0.3s;
+}
+
+ .slide_num ul li a
+{
+    display: block;
+    padding: 0 10px;
+    width: 100%;
+    height: 100%; 
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    position: relative;
+    opacity: 0.5;
+}
+
+ .slide_num ul li a:hover
+{
+    opacity: 1;
+}
+
+/* 후에 수정 */
+ .slide_num ul li:nth-child(1) a
+{
+    opacity: 1;
+}
+
+.slideOuter .slide_num ul li + li
+{
+   border-left: 1px solid #000;
+}
+
+.slideOuter  .slide_num ul li .slider .slide_num_text_1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 0 5px 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    z-index: 80;
+}
+
+.slideOuter  .slide_num ul li .slide_num_text_2
+{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 0px 0 15px 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis; 
+    z-index: 80;
+}
+
+.slide_num ul li a .slide_box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: ani_start 5s ease infinite;
+} 
+
+.slideOuter:hover .slide_num ul li a .slide_box
+{
+    animation: ani_stop 5s ease infinite;
+    animation-play-state: paused ;
+}
+
+@keyframes ani_stop
+{
+    0%
+    {
+        background: #0077ff;
+        width: 0;
+    }
+}
+
+@keyframes ani_start
+{
+    0%
+    {
+        background: #0077ff;
+        width: 0;
+    }
+
+    100%
+    {
+        background: #0077ff;
+        width: 100%;
+    }
+}
+
+
+/* section 구역 */
+.section 
+{
+    width: 100%;
+    /* margin: 0 auto; */
+    padding: 80px 120px;
+    position: relative;
+}
+
+.section .section1 .title h2
+{
+  letter-spacing: -2px;
+}
+
+.section .section1 .title
+{
+    position: relative;
+}
+
+/* 고객센터 보안센터  */
+.section .section1 .service_center 
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 14px;
+}
+
+.section .section1 .service_center ul li 
+{
+    float: left;
+    padding-left: 30px;
+}
+
+.section .section1 .service_center ul li a 
+{
+    transition: all 0.2s;
+}
+
+.section .section1 .service_center ul li:hover a 
+{
+    color: #0077ff;
+}
+
+/* 추천게임 리스트 */
+.section .section1 .Re_game ul li a 
+{
+    float: left;
+    width: 153px;
+    margin: 30px 10px 0 0;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.section .section1 .Re_game ul li a:hover 
+{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 추천게임 이미지 */
+.section .section1 .Re_game ul li a .Re_game_img_box 
+{
+    overflow: hidden;
+}
+
+.section .section1 .Re_game ul li a:hover .Re_game_img 
+{
+    transform: scale(1.2);
+}
+
+.section .section1 .Re_game ul li a .Re_game_img 
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 192px;
+    transition: all 0.3s;
+    box-shadow: inset 0px 50px 80px rgba(0, 0, 0, 0.5);
+}
+
+/* 추천게임 텍스트 */
+.section .section1 .Re_game ul li a .Re_game_text .Re_game_text1 
+{
+    display: block;
+    width: 30px;
+    font-size: 10px;
+    background: #00dbd3;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 3px 0px;
+    margin: 16px 0 0 12px;
+}
+
+.section .section1 .Re_game ul li a  .Re_game_text .Re_game_text2 
+{
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #17191d;
+    margin: 8px 0 0 12px;
+    height: 43px;
+}
+
+.section .section1 .Re_game ul li a  .Re_game_text .Re_game_text3 
+{
+    display: block;
+    width: 129px;
+    color: #9fa1a7;
+    font-size: 13px;
+    margin: 30px 0 17px 12px;
+}
+
+/* 첫번째 추천게임 */
+.section .section1 .Re_game ul li a .Re_game1 .Re_game_img 
+{
+    background-image: url(../img/yuV721132331272.png);
+}
+
+/* 두번째 추천게임 */
+.section .section1 .Re_game ul li a .Re_game2  .Re_game_img 
+{
+    background-image: url(../img/1OS109100708030.jpg);
+}
+
+/* 세번째 추천게임 */
+.section .section1 .Re_game ul li a .Re_game3 .Re_game_img 
+{
+    background-image: url(../img/Yc3l29180108630.png);
+}
+
+/* 네번째 추천게임 */
+.section .section1 .Re_game ul li a .Re_game4 .Re_game_img 
+{
+    background-image: url(../img/u72I29180233486.png);
+}
+
+/*  추천게임 마지막 보안 센터 */
+.section .section1 .Re_game ul li a .security_center 
+{
+    background-image: url(../img/banner_recommend.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 342px;
+}
+
+/* 로그인 창 */
+.section .section1 .Login 
+{
+    float: right;
+    width: 460px;
+    background: #fff;
+    padding: 80px 0 50px 60px;
+    margin-top: 30px;
+}
+
+/* 로그인 박스 첫번쨰 */
+.section .section1 .Login .Login_box a 
+{
+    display: block;
+    width: 350px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 22px 0 22px 0;
+    background: #000;
+    color: #fff;
+    transition: all 0.3s;
+   
+}
+
+.section .section1 .Login .Login_box a:hover
+{
+    background: #0077ff;
+}
+
+/* 로그인 박스 두번쨰 */
+.section .section1 .Login .Simple_login_box 
+{
+    width: 350px;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+/* 일회용 로그인  */
+.section .section1 .Login .Simple_login_box .Dis_login_box a 
+{
+    display: block;
+    padding: 15px 0 15px 0;
+    float: left;
+    background: #4a4e57;
+    width: 173px;
+    transition: all 0.3s;
+}
+
+.section .section1 .Login .Simple_login_box .Dis_login_box:hover a 
+{
+    background: #0077ff;
+}
+
+/* QR 로그인 */
+.section .section1 .Login .Simple_login_box .QR_login_box a 
+{
+    display: block;
+    padding: 15px 0 15px 0;
+    float: right;
+    background: #4a4e57;
+    width: 173px;
+    transition: all 0.3s;
+}
+
+.section .section1 .Login .Simple_login_box .QR_login_box:hover a 
+{
+    background: #0077ff;
+}
+
+/* 로그인 박스 세번쨰 */
+.section .section1 .Login .Other_login_box 
+{
+    background: #f8f9fa;
+    width: 350px;
+    margin: 10px 0 10px 0;
+    position: relative;
+}
+
+.section .section1 .Login .Other_login_box span 
+{
+    margin-left: 50px;
+    color: #9fa1a7;
+    font-size: 12px;
+    line-height: 35px;
+}
+
+/* 로고 */
+.section .section1 .Login .Other_login_box .login_logo
+{
+    position: absolute;
+    top: 8px;
+    right: 40px;
+}
+
+.section .section1 .Login .Other_login_box .login_logo a
+{
+    display: inline-block;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.section .section1 .Login .Other_login_box .login_logo a:hover
+{
+   opacity: 0.5;
+}
+
+/* 사이트 로고 */
+.section .section1 .Login .Other_login_box .login_logo .google
+{
+    background-image: url(../img/google.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+}
+
+.section .section1 .Login .Other_login_box .login_logo .facebook
+{
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+}
+
+.section .section1 .Login .Other_login_box .login_logo .naver
+{
+    background-image: url(../img/naver.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+}
+
+.section .section1 .Login .Other_login_box .login_logo .apple
+{
+    background-image: url(../img/apple.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+}
+
+/* 아이디, 비번 찾기 */
+.section .section1 .Login .Find
+{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.section .section1 .Login .Find a
+{
+    font-size: 12px;
+    color: #737881;
+    transition: all 0.3s;
+}
+
+.section .section1 .Login .Find a:hover
+{
+    color: #0077ff;
+}
+
+.section .section1 .Login .Find .Find_ID
+{
+   display: inline-block;
+}
+
+.section .section1 .Login .Find .Find_PW
+{
+   display: inline-block;
+   padding-left: 15px;
+}
+
+/* 회원가입 */
+.section .section1 .Login .Join
+{
+    float: right;
+    margin: 10px 50px 0 0;
+}
+
+.section .section1 .Login .Join a
+{
+    font-size: 12px;
+    color: #737881;
+    transition: all 0.3s;
+}
+
+.section .section1 .Login .Join a:hover
+{
+    color: #0077ff;
+}
+
+/* 신규게임 */
+.section .section2 h2
+{
+    letter-spacing: -2px;
+    padding-top: 50px;
+}
+
+.section .platform_log
+{
+    display: inline-block;
+    background-image: url(../img/set_device.png);
+    background-repeat: no-repeat;
+    margin: 5px 0 0 3px;
+}
+
+.section .pc
+{   
+    width: 12px;
+    height: 11px;
+    background-position: -3px -5px;
+}
+
+.section .iphone
+{
+    width: 12px;
+    height: 15px;
+    background-position: -3px -52px;
+}
+
+.section  .android
+{
+    width: 12px;
+    height: 13px;
+    background-position: -3px -104px;
+}
+
+/* 신규게임 리스트 기본박스*/
+.section .section2 .New_game li
+{
+    float: left;
+    padding: 45px 20px 0 0;
+}
+
+.section .section2 .New_game li a
+{
+    display: block;
+    background: #fff;
+    border-top: 2px solid #0077ff;
+    width: 302px;
+    transition: all 0.3s;
+    padding-bottom: 43px;
+}
+
+.section .section2 .New_game a:hover
+{
+    background: linear-gradient(150deg, #0077ff, #00dbd3);
+}
+
+/* 신규게임 리스트 안에 박스 */
+.section .section2 .New_game .game_box
+{
+    border-top: 1px solid #fff;
+    padding: 20px 0 0 20px;
+    position: relative;
+}
+
+/* 신규박스 리스트 텍스트1 */
+.section .section2 .New_game .phrases
+{
+    display: inline-block;
+    background: #0077ff;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 10px;
+    text-align: center;
+    padding: 1px 5px;
+    transition: all 0.15s;
+}
+
+.section .section2 .New_game a:hover .phrases
+{
+    background: #fff;
+    color: #0077ff;
+}
+
+/* 신규박스 리스트 텍스트2 */
+.section .section2 .New_game .name
+{
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 17px;
+    letter-spacing: -1.5px;
+    transition: all 0.15s;
+}
+
+.section .section2 .New_game a:hover .name
+{
+    color: #fff;
+}
+
+/* 신규박스 리스트 텍스트3 */
+.section .section2 .New_game .platform
+{
+    display: inline-block;
+    font-size: 12px;
+}
+
+.section .section2 .New_game .genre
+{
+    display: inline-block;
+    font-size: 12px;
+    color: #9fa1a7;
+    transition: all 0.15s;
+}
+
+.section .section2 .New_game a:hover .genre
+{
+    color: #fff;
+}
+
+/* 신규박스 리스트 텍스트4 */
+.section .section2 .New_game .ex
+{
+    /* display: inline-block; */
+    font-size: 12px;
+    color: #9fa1a7;
+    background: #fff;
+    margin-top: 20px;
+    transition: all 0.15s;
+    letter-spacing: -1px;
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    z-index: 2;
+    padding: 2px 5px;
+}
+
+.section .section2 .New_game a:hover .ex
+{
+    background: #0077ff;
+    color: #fff;
+}
+
+.section .section2 .New_game .game_img
+{
+    position: absolute;
+    bottom: -43px;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 180px;
+    z-index: 1;
+}
+
+/* 신규게임 이미지 */
+.section .section2 .New_game .New_game1 .game_img
+{
+    background-image: url(../img/c6Ue24084610000.png);
+}
+
+.section .section2 .New_game .New_game2 .game_img
+{
+    background-image: url(../img/acLX08183803258.png);
+}
+
+.section .section2 .New_game .New_game3 .game_img
+{
+    background-image: url(../img/Ix6429182152777.png);
+}
+
+/* 전체게임 리스트  */
+.section .section3
+{
+    position: relative;
+}
+
+.section .section3 h2
+{
+    display: inline-block;
+    letter-spacing: -2px;
+    padding-top: 50px;
+}
+
+/* 메뉴 선택버튼 */
+.section .section3 .title .menu_select
+{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* 라디오 체크박스 안보이게 */
+.section .section3 .title .menu_select input
+{
+    display: none;
+}
+
+.section .section3 .title .menu_select .view i
+{
+    color:  #9fa1a7;
+    border: 1px solid  #9fa1a7;;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    width: 26px;
+    cursor: pointer;
+    margin: -5px -3px;
+}
+
+.section .section3 .title .menu_select .view:hover i
+{
+    color: #0077ff;
+    border: 1px solid #0077ff;
+}
+
+/* 후에 수정 */
+.section .section3 .title .menu_select .view:nth-child(3) i
+{
+    background: #000;
+    color: #fff;
+}
+
+/* 검색박스 */
+.section3 .title .search_box
+{
+    position: absolute;
+    top: 36px;
+    right: 0px;
+}
+
+.section3 .title .search_box .search
+{
+    width: 302px;
+    border: 0;
+    border-bottom: 1px solid  #9fa1a7;
+    background: none;
+    padding: 15px 15px 15px 0;
+}
+
+.section3 .title button
+{
+    width: 40px;
+    display: inline-block;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: -50px;
+    padding: 10px;
+}
+
+.section3 .title button:hover
+{
+    color: #0077ff;
+}
+
+/* 메뉴바 */
+
+.section .section3 .menu input
+{
+    display: none;
+}
+
+.section .section3 .menu
+{
+    background: #fff;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.section .section3 .menu .menu_text
+{
+    font-size: 12px;
+    color: #9fa1a7;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.section .section3 .menu .menu_text:hover
+{
+    color: #0077ff;
+}
+/* 후에 수정 */
+.section .section3 .menu .menu_text:nth-child(2)
+{
+    transition: all 0.2s;
+    cursor: pointer;
+    background: #000;
+    border-radius: 50px;
+    color: #fff;
+    padding: 1px 10px;
+    margin: 10px;
+}
+
+/* 게임 리스트 */
+.section .section3 #PC_game_list 
+{
+    padding-top: 50px;
+    display: inline-block;
+    /* padding-bottom: 50px; */
+}
+
+/* 플랫폼 타이틀 */
+.section .section3 #PC_game_list .game_platform
+{
+    padding-bottom: 30px;
+    color: #9fa1a7;
+}
+
+.section .section3 #PC_game_list .game_platform a
+{
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.section .section3 #PC_game_list .game_platform a:hover
+{
+    color: #0077ff;
+}
+
+/*  첫번째만 검은색 고정 */
+.section .section3 #PC_game_list .game_platform h2:nth-child(1) a
+{
+    color: #000;
+}
+
+/* PC 게임 리스트 */
+.section .section3 #PC_game_list .game_list ul li
+{
+    float: left;
+    width: 302px;
+    margin: 0px 25px 50px 0;
+    background: #fff;
+}
+
+.section .section3 #PC_game_list .game_list ul li a
+{
+    display: block;
+    transition: all 0.3s;
+}
+
+.section .section3 #PC_game_list .game_list ul li a:hover
+{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.section .section3 #PC_game_list .game_list .img_box 
+{
+    overflow: hidden;
+    background: red;
+}
+
+.section .section3 #PC_game_list  .game_list .img_box .img
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 302px;
+    height: 200px;
+    transition: all 0.3s;
+    box-shadow: inset 0px 300px 300px rgba(0, 0, 0, 0.1);
+}
+
+.section .section3 #PC_game_list  .game_list ul li a:hover .img_box .img
+{
+    transform: scale(1.1);
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.section .section3 #PC_game_list  .game_list .name
+{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px 0 0 15px;
+    letter-spacing: -1.5px;
+}
+
+.section .section3 #PC_game_list  .game_list .text
+{
+    font-size: 12px;
+    padding: 5px 0 5px 15px;
+    color: #9fa1a7;
+}
+
+.section .section3 #PC_game_list .game_list  .platform
+{
+    display: inline-block;
+    margin: 20px 0 10px 15px;
+}
+
+.section .section3 #PC_game_list .game_list  .genre
+{
+    display: inline-block;
+    font-size: 12px;
+    color: #9fa1a7;
+}
+
+/* PC 게임 리스트 이미지*/
+
+.section .section3 #PC_game_list  .game_list  .text strong
+{
+    color:#0077ff;
+}
+
+.section .section3 #PC_game_list .game_list .game_01 .img_box .img
+{
+    background: url(../img/logo/2FJh07105826755.jpg);
+}
+
+.section .section3 #PC_game_list  .game_list .game_02 .img_box .img
+{
+    background: url(../img/logo/0L8521132330755.png);
+}
+
+.section .section3 #PC_game_list .game_list  .game_03 .img_box .img
+{
+    background: url(../img/logo/eovt09154057782.png);
+}
+
+.section .section3 #PC_game_list .game_list  .game_04 .img_box .img
+{
+    background: url(../img/logo/d8QB20123509804.jpg);
+}
+
+.section .section3 #PC_game_list  .game_list .game_05 .img_box .img
+{
+    background: url(../img/logo/QHRQ22192726387.jpg);
+}
+
+.section .section3 #PC_game_list .game_list  .game_06 .img_box .img
+{
+    background: url(../img/logo/aeV823133331689.jpg);
+}
+
+.section .section3 #PC_game_list  .game_list .game_07 .img_box .img
+{
+    background: url(../img/logo/ZXrw02123553903.png);
+}
+
+.section .section3 #PC_game_list .game_list  .game_08 .img_box .img
+{
+    background: url(../img/logo/FaDz14211009656.png);
+}
+
+.section .section3 #PC_game_list .game_list  .game_09 .img_box .img
+{
+    background: url(../img/logo/VAdr29212239779.png);
+}
+
+/*  모바일 게임 리스트 */
+.section .section3 #Mobile_game_list
+{
+    display: inline-block;
+    padding-top: 50px;
+}
+
+.section .section3 #Mobile_game_list .game_list ul li
+{
+    float: left;
+    width: 302px;
+    margin: 20px 25px 10px 0;
+    background: #fff;
+}
+
+.section .section3 #Mobile_game_list .game_list ul li a
+{
+    display: block;
+    transition: all 0.3s;
+    padding-bottom: 62px;
+}
+
+.section .section3 #Mobile_game_list .game_list ul li a:hover
+{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.section .section3 #Mobile_game_list .game_list .img
+{
+    width: 86px;
+    height: 86px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 20px 10px 20px 15px;
+    float: left;
+}
+
+.section .section3 #Mobile_game_list .game_list .name
+{
+    padding-top: 20px ;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 16px;
+}
+
+.section .section3 #Mobile_game_list .game_list strong
+{
+    color:#0077ff;
+    font-size: 13px;
+}
+
+.section .section3 #Mobile_game_list .game_list .genre
+{
+    color: #9fa1a7;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.section .section3 #Mobile_game_list .game_list
+{
+    padding-top: 20px;
+}
+
+.section .section3 #Mobile_game_list .game_list .platform
+{
+    float: left;
+    padding: 20px 10px 0 0;
+} 
+
+.section .section3 #Mobile_game_list .game_list .state
+{
+    float: right;
+    font-size:12px ; 
+    padding: 25px 10px 0 0;
+    color: #fff;
+}
+
+.section .section3 #Mobile_game_list .game_list .state div
+{
+    display: inline-block;
+    border-radius: 50px;
+    padding: 1px 5px 1px 5px;
+    color: #fff;  
+}
+
+.section .section3 #Mobile_game_list .game_list .state .registration
+{
+    background: #9299ac;
+}
+
+.section .section3 #Mobile_game_list .game_list .open
+{
+    background: #ff6060;
+}
+
+.section .section3 #Mobile_game_list .game_list .update
+{
+    background: #2be283;
+}
+
+/* 모바일 게임 리스트 이미지 */
+.section .section3 #Mobile_game_list .game_list ul li .game_01 .img
+{
+    background-image: url(../img/mobile_logo/ydj202162503132.png);
+}
+
+.section .section3 #Mobile_game_list .game_list ul li .game_02 .img
+{
+    background-image: url(../img/mobile_logo/vx5D08091421402.jpg);
+}
+
+.section .section3 #Mobile_game_list .game_list ul li .game_03 .img
+{
+    background-image: url(../img/mobile_logo/Bl5416093549212.png);
+}
+
+.section .section3 #Mobile_game_list .game_list ul li .game_04 .img
+{
+    background-image: url(../img/mobile_logo/ITKn16100953708.png);
+}
+
+.section .section3 #Mobile_game_list .game_list ul li .game_05 .img
+{
+    background-image: url(../img/mobile_logo/jZaM03182411854.png);
+}
+
+.section .section3 #Mobile_game_list .game_list ul li .game_06 .img
+{
+    background-image: url(../img/mobile_logo/mQVi30152325998.png);
+}
+
+.section .section3 #Mobile_game_list .game_list ul li .game_07 .img
+{
+    background-image: url(../img/mobile_logo/vxrp02155220964.png);
+}
+
+/* top버튼 */
+.top_button_box
+{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 100;
+    font-size: 12px;
+    color: #9299ac;
+}
+
+.top_button_box ul li:nth-child(2)
+{
+    padding: 15px 0 1.5px 0;
+}
+
+.top_button_box ul li:nth-child(3)
+{
+    padding: 1.5px 0 5px 0;
+}
+
+.top_button_box ul li:nth-child(4) a
+{
+    border: 2px solid #9299ac;
+}
+
+.top_button_box ul li:nth-child(4) a:hover
+{
+    border: 2px solid #0077ff;
+    background: #fff;
+    color:#0077ff;
+}
+
+.top_button_box ul li a
+{
+    display: block;
+    background: #fff;
+    padding: 10px 13px;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.top_button_box ul li a:hover
+{
+    color:#fff;
+    background: #0077ff;
+}
+
+.top_button_box ul li a div
+{
+    margin-bottom: -3px;
+}
+
+.top_button_box ul li a span
+{
+    margin: 5px;
+}
+
+/* top 버튼 ucc 이미지 */
+.top_button_box a .ucc_videos
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 260px;
+    background: #fff;
+    opacity: 0;
+    transition: all 0.3s;
+    color: #4a4e57;
+    visibility :hidden;
+}
+
+.top_button_box a:hover .ucc_videos, 
+.top_button_box .ucc_img:hover + a .ucc_videos
+{
+    opacity: 1;
+    visibility : visible;
+}
+
+.top_button_box a .ucc_videos .ucc_videos_text ul
+{
+    padding: 15px 15px;
+}
+.top_button_box a .ucc_videos .img_box
+{
+    overflow: hidden;
+}
+
+.top_button_box a .ucc_videos .img_box .img
+{
+    background-image: url(../img/maxresdefault.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 260px;
+    height: 145px;
+    transition: all 0.3s;
+}
+
+.top_button_box a .ucc_videos:hover .img_box .img
+{
+    transform: scale(1.1);
+}
+
+.top_button_box a .ucc_videos .ucc_videos_text ul > li:nth-child(1)
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.top_button_box a .ucc_videos .ucc_videos_text ul li:nth-child(1) span
+{
+    color: #0077ff;
+}
+
+.top_button_box a .ucc_videos .ucc_videos_text ul li:nth-child(1) button
+{
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    float: right;
+    font-size: 12px;
+}
+
+.top_button_box a .ucc_videos .ucc_videos_text ul li:nth-child(1) button:hover
+{
+    color: #0077ff;
+}
+
+.top_button_box a .ucc_videos .ucc_videos_text ul li:nth-child(2)
+{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    padding-top: 10px;
+}
+
+.top_button_box a .ucc_videos .ucc_videos_text ul li:nth-child(3)
+{
+    padding-top: 5px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis; 
+}
+
+.top_button_box a .ucc_videos .ucc_videos_text ul li:nth-child(4) button
+{
+    padding-top: 35px;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.top_button_box a .ucc_videos .ucc_videos_text ul li:nth-child(4) button:hover
+{
+    color: #0077ff;
+}
+
+.top_button_box .ucc_img
+{
+    background-image: url(../img/maxresdefault.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 116.22px;
+    height: 61px;
+    transition: all 0.3s;
+}
+
+/* top 버튼 아이콘 */
+.top_button_box .top_button_box_icon
+{
+    display: inline-block;
+    background-image: url(../img/set_floating.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ucc
+{   
+    width: 16px;
+    height: 14px;
+    background-position: -1px -303px;
+}
+
+ .PC_button
+{   
+    width: 16px;
+    height: 14px;
+    background-position: -1px -103px;
+}
+
+
+ .mobile_button
+{   
+    width: 12px;
+    height: 18px;
+    background-position: -3px -201px;
+}
+
+.TOP_button
+{   
+    width: 12px;
+    height: 13px;
+    background-position: -3px -2px;
+}
+
+/* 호버시 색상 아이콘 색상변경 */
+.top_button_box ul li a .ucc_white
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 14px;
+    background-position: -1px -353px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.top_button_box ul li a:hover .ucc
+{
+    opacity: 0;
+}
+
+.top_button_box ul li a:hover .ucc_white
+{
+    opacity: 1;
+}
+
+.top_button_box ul li a .PC_button_white
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 14px;
+    background-position: -1px -153px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.top_button_box ul li a:hover .PC_button_white
+{
+    opacity: 1;
+}
+
+.top_button_box ul li a .mobile_button_white
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 18px;
+    background-position: -3px -251px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.top_button_box ul li a:hover .mobile_button_white
+{
+    opacity: 1;
+}
+
+.top_button_box ul li a .TOP_button_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 13px;
+    background-position: -3px -52px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.top_button_box ul li a:hover .TOP_button_blue
+{
+    opacity: 1;
+}

@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넥슨</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+
+    <div id="header">
+        <h1 class="logo">
+            <a href="#"><img src="./img/logo_nexon.png" alt="넥슨 로고"></a>
+        </h1>
+
+        <div class="nav_but">
+            <!-- <a href="#">
+                    <i class="fas fa-bars"></i>
+                    <span>메뉴</span>
+                </a> -->
+            <button type="button" onclick="nav_open()">
+                <i class="fas fa-bars">
+                    <span>메뉴</span>
+                </i>
+            </button>
+        </div>
+
+        <div class="membership ">
+            <ul>
+                <li class="pc_room">
+                    <i class="fas fa-desktop"></i>
+                    <span class="on">OFF</span>
+                    <span class="hidden">PC방</span>
+                </li>
+
+                <li><a href="#">회원가입</a></li>
+
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </div>
+
+        <div class="nav_dummy_box">
+            <div id="nav">
+
+                <div class="exit_but">
+                    <fieldset>
+                        <legend>메뉴 닫기 버튼</legend>
+                        <button type="button" onclick="nav_close()"">
+                            <i class=" fas fa-times"></i>
+                        </button>
+                    </fieldset>
+                </div>
+
+                <div class="game_view">
+                    <div class="title">
+                        <ul>
+                            <li><a href="#">PC게임</a></li>
+                            <li><a href="#">모바일 게임</a></li>
+                        </ul>
+                        <a href="#" class="service_center">고객센터</a>
+                    </div>
+
+                    <div class="all_game ">
+
+                        <div class="list_01">
+                            <ul>
+                                <h3>A~Z</h3>
+                                <li><a href="#">EA SPORTS&trade; FIFA ONLINE 4</a></li>
+                                <li><a href="#">V4</a></li>
+                            </ul>
+
+                            <ul>
+                                <h3>ㄱ~ㄹ</h3>
+                                <li><a href="#">던전앤파이터</a></li>
+                                <li><a href="#">도래곤네스트</a></li>
+                            </ul>
+
+                            <ul>
+                                <h3>ㅁ~ㅅ</h3>
+                                <li><a href="#">마비노기</a></li>
+                                <li><a href="#">마비노기영웅전</a></li>
+                                <li><a href="#">메이플스토리</a></li>
+                                <li><a href="#">메이플스토리2</a></li>
+                                <li><a href="#">바람의나라</a></li>
+                                <li><a href="#">바람의나라: 연</a></li>
+                                <li><a href="#">버블파이터</a></li>
+                                <li><a href="#">사이퍼즈</a></li>
+                                <li><a href="#">서든어택</a></li>
+                            </ul>
+
+                            <ul>
+                                <h3>ㅇ~ㅈ</h3>
+                                <li><a href="#">아스가르드</a></li>
+                                <li><a href="#">아키에이지</a></li>
+                                <li><a href="#">어둠의전설</a></li>
+                                <li><a href="#">엘소드</a></li>
+                                <li><a href="#">일랜시아</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="list_02">
+                            <ul>
+                                <h3>ㅊ~ㅋ</h3>
+                                <li><a href="#">천애명월도</a></li>
+                                <li><a href="#">카운터사이드</a></li>
+                                <li><a href="#">카운터스트라이크온라인</a></li>
+                                <li><a href="#">카트라이더</a></li>
+                                <li><a href="#">카트라이더: 드리프트</a></li>
+                                <li><a href="#">커츠펠</a></li>
+                                <li><a href="#">크레이지아케이드</a></li>
+                                <li><a href="#">클로저스</a></li>
+                            </ul>
+
+                            <ul>
+                                <h3>ㅌ~ㅎ</h3>
+                                <li><a href="#">테일즈런너</a></li>
+                                <li><a href="#">테일즈위버</a></li>
+                                <li><a href="#">트리오브세이비어</a></li>
+                                <li><a href="#">파이널판타지14</a></li>
+                                <li><a href="#">프로젝트 D</a></li>
+                                <li><a href="#">커츠펠</a></li>
+                                <li><a href="#">프로젝트 HP (가제)</a></li>
+                                <li><a href="#">프리스타일2</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="nav_footer">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="icon my_info">
+                                        <div class="icon my_info_blue"></div>
+                                    </div>
+                                    <span>내정보</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon event">
+                                        <div class="icon event_blue"></div>
+                                    </div>
+                                    <span> 이벤트</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon cash">
+                                        <div class="icon cash_blue"></div>
+                                    </div>
+                                    <span>넥슨캐시</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon security_center_icon">
+                                        <div class="icon security_center_icon_blue"></div>
+                                    </div>
+                                    <span> 보안센터</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon notice_icon">
+                                        <div class="icon notice_icon_blue"></div>
+                                    </div>
+                                    <span>공지사항</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon plug">
+                                        <div class="icon plug_blue"></div>
+                                    </div>
+                                    <span>넥슨플러그</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon service_center_icon ">
+                                        <div class="icon service_center_blue"></div>
+                                    </div>
+                                    <span>고객센터</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon calendar">
+                                        <div class="icon calendar_blue"></div>
+                                    </div>
+                                    <span>넥슨달력</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon play">
+                                        <div class="icon play_blue"></div>
+                                    </div>
+                                    <span>넥슨플레이</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="all_service">
+                        <a href="#">전체서비스</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <main id="main ">
+
+        <div class="slideOuter">
+            <div class="slideInner">
+
+                <div class="slide slide1">
+                    <span class="blind">바람의 나라:연 X 국립민속박물관</span>
+                    <a href="#">
+                        <div class="slide slide_img">
+                            <div class="slide_text">
+                                <span class="blind">은헤 갚은 호랑이 등장</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="slide slide2">
+                    <span class="blind">던전앤파이터X제주 삼다수</span>
+                    <a href="#">
+                        <div class="slide slide_img">
+                            <span class="blind">던파와 제주삼다수의 상쾌한 만남</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="slide slide3">
+                    <span class="blind">테일즈 위버</span>
+                    <a href="#">
+                        <div class="slide slide_img">
+                            <div class="slide_text">
+                                <span class="blind">찬바람 불땐, 테일즈위버!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="slide slide4">
+                    <span class="blind">넥슨 플레이</span>
+                    <a href="#">
+                        <div class="slide slide_img">
+                            <span class="blind">잘봐, 넥플 혜책이다.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="slide_num">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="slider">
+                                <div class="slide_num_text_1">바람의나라: 연</div>
+                                <div class="slide_num_text_2">은혜 갚은 호랑이 등장!</div>
+                                <div class="slide_box"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="slider">
+                                <div class="slide_num_text_1">던전앤파이터</div>
+                                <div class="slide_num_text_2">던파와 제주삼다수의 상쾌한 만남</div>
+                                <!-- <div class="slide_box"></div> -->
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="slider">
+                                <div class="slide_num_text_1">테일즈위버</div>
+                                <div class="slide_num_text_2">찬바람 불땐 테일즈위버!</div>
+                                <!-- <div class="slide_box"></div> -->
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="slider">
+                                <div class="slide_num_text_1">넥슨</div>
+                                <div class="slide_num_text_2">잘봐, 넥플 혜택이다.</div>
+                                <!-- <div class="slide_box"></div> -->
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <div class="section">
+
+            <div class="section1 row cf">
+                <div class="title">
+                    <h2>추천게임</h2>
+
+                    <div class="service_center">
+                        <ul>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">보안센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Re_game">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="Re_game1">
+
+                                    <div class="Re_game_img_box">
+                                        <div class="Re_game_img"></div>
+                                    </div>
+
+                                    <div class="Re_game_text">
+                                        <ul>
+                                            <li>
+                                                <span class="Re_game_text1">추천</span>
+                                            </li>
+                                            <li>
+                                                <span class="Re_game_text2">EA SPORTS&trade; FIFA ONLINE 4</span>
+                                            </li>
+                                            <li>
+                                                <span class="Re_game_text3">최근 게이머가 많은</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="Re_game2">
+
+                                    <div class="Re_game_img_box">
+                                        <div class="Re_game_img"></div>
+                                    </div>
+
+                                    <div class="Re_game_text">
+                                        <ul>
+                                            <li>
+                                                <span class="Re_game_text1">추천</span>
+                                            </li>
+                                            <li>
+                                                <span class="Re_game_text2">메이플스토리</span>
+                                            </li>
+                                            <li>
+                                                <span class="Re_game_text3">오랫동안 사랑받는</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="Re_game3">
+
+                                    <div class="Re_game_img_box">
+                                        <div class="Re_game_img"></div>
+                                    </div>
+
+                                    <div class="Re_game_text">
+                                        <ul>
+                                            <li>
+                                                <span class="Re_game_text1">추천</span>
+                                            </li>
+                                            <li>
+                                                <span class="Re_game_text2">바람의나라</span>
+                                            </li>
+                                            <li>
+                                                <span class="Re_game_text3">오래 플레이하는</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="Re_game4">
+
+                                    <div class="Re_game_img_box">
+                                        <div class="Re_game_img"></div>
+                                    </div>
+
+                                    <div class="Re_game_text">
+                                        <ul>
+                                            <li>
+                                                <span class="Re_game_text1">추천</span>
+                                            </li>
+                                            <li>
+                                                <span class="Re_game_text2">서든어택</span>
+                                            </li>
+                                            <li>
+                                                <span class="Re_game_text3">최근 게이머가 많은</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="security_center">
+                                </div>
+                                <span class="blind">한층 더 강화된 보안 서비스를 만나보세요!</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="Login">
+                    <div class="Login_box">
+                        <a href="#">NEXON ID 로그인</a>
+                    </div>
+
+                    <div class="Simple_login_box">
+                        <div class="Dis_login_box">
+                            <a href="#">일회용 로그인</a>
+                        </div>
+                        <div class="QR_login_box">
+                            <a href="#">QR 로그인</a>
+                        </div>
+                    </div>
+
+                    <div class="Other_login_box">
+                        <span>다른 계정 간편 로그인</span>
+                        <div class="login_logo">
+                            <a href="#">
+                                <div class="google"></div>
+                                <span class="blind">구글</span>
+                            </a>
+                            <a href="#">
+                                <div class="facebook"></div>
+                                <span class="blind">페이스북</span>
+                            </a>
+                            <a href="#">
+                                <div class="naver"></div>
+                                <span class="blind">네이버</span>
+                            </a>
+                            <a href="#">
+                                <div class="apple"></div>
+                                <span class="blind">애플</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="Find">
+                        <div class="Find_ID">
+                            <a href="#">넥슨 ID찾기</a>
+                        </div>
+                        <div class="Find_PW">
+                            <a href="#">비밀번호 찾기</a>
+                        </div>
+                    </div>
+
+                    <div class="Join">
+                        <a href="#">회원가입</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section2 row cf">
+                <h2>신규게임</h2>
+
+                <div class="New_game">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="New_game1 game_box">
+
+                                    <div class="phrases">사전등록</div>
+                                    <div class="name">던전앤파이터 모바일</div>
+                                    <div class="platform">
+                                        <div class="platform_log iphone"><span class="blind">아이폰</span></div>
+                                        <div class="platform_log android"><span class="blind">안드로이드</span></div>
+                                    </div>
+                                    <div class="genre">
+                                        ACTION RPG
+                                    </div>
+                                    <div class="ex">
+                                        액션쾌감 던파모바일! 지금 사전등록하세요.
+                                    </div>
+                                    <div class="game_img"></div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="New_game2 game_box">
+                                    <div class="phrases">OPEN</div>
+                                    <div class="phrases">UPDATE</div>
+                                    <div class="name">블루 아카이브</div>
+                                    <div class="platform">
+                                        <div class="platform_log iphone"><span class="blind">아이폰</span></div>
+                                        <div class="platform_log android"> <span class="blind">안드로이드</span></div>
+                                    </div>
+                                    <div class="genre">
+                                        수집형RPG
+                                    </div>
+                                    <div class="ex">
+                                        우리들의 기적 같은 이야기, 블루아카이브
+                                    </div>
+                                    <div class="game_img"></div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="New_game3 game_box">
+                                    <div class="phrases">UPDATE</div>
+                                    <div class="name">바람의 나라:연</div>
+                                    <div class="platform">
+                                        <div class="platform_log pc">
+                                            <span class="blind">PC</span>
+                                        </div>
+                                    </div>
+                                    <div class="genre">
+                                        수집형 RPG
+                                    </div>
+                                    <div class="ex">
+                                        PC버전으로 쾌적하게 만나 바연!
+                                    </div>
+                                    <div class="game_img"></div>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="section3 row cf">
+
+                <div class="title">
+                    <h2>전체게임</h2>
+                    <div class="menu_select">
+                        <fieldset>
+                            <legend>뷰 박스</legend>
+                            <input type="radio" id="gallery" name="view" checked>
+                            <label for="gallery" class="gallery_view view">
+                                <i class="fas fa-th-large">
+                                    <span class="blind">갤러리
+                                        뷰</span>
+                                </i>
+                            </label>
+
+                            <input type="radio" id="list" name="view">
+                            <label for="list" class="list_text view">
+                                <i class="fas fa-bars">
+                                    <span class="blind">리스트 뷰</span>
+                                </i>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="search_box">
+                        <fieldset>
+                            <legend>검색창박스</legend>
+                            <input type="text" name="game_search" id="game_search" placeholder="게임명 검색 " class="search">
+                            <button type="submit">
+                                <i class="fas fa-search"> </i>
+                            </button>
+                        </fieldset>
+                    </div>
+
+                </div>
+
+                <div class="menu">
+                    <input type="radio" id="all" name="all_menu" checked>
+                    <label for="all" class="menu_text">#전체</label>
+                    <input type="radio" id="early_stage" name="all_menu">
+                    <label for="early_stage" class="menu_text">#얼리스테이지</label>
+                    <input type="radio" id="RPG" name="all_menu">
+                    <label for="RPG" class="menu_text">#RPG</label>
+                    <input type="radio" id="action_RPG" name="all_menu">
+                    <label for="action_RPG" class="menu_text">#액션RPG</label>
+                    <input type="radio" id="AOS_MOBA" name="all_menu">
+                    <label for="AOS_MOBA" class="menu_text">#AOS/MOBA</label>
+                    <input type="radio" id="FPS" name="all_menu">
+                    <label for="FPS" class="menu_text">#FPS</label>
+                    <input type="radio" id="casual" name="all_menu">
+                    <label for="casual" class="menu_text">#캐주얼</label>
+                    <input type="radio" id="sports" name="all_menu">
+                    <label for="sports" class="menu_text">#스포츠</label>
+                    <input type="radio" id="PVP" name="all_menu">
+                    <label for="PVP" class="menu_text">#PVP</label>
+                </div>
+
+                <div id="PC_game_list">
+                    <div class="game_platform">
+                        <h2><a href="#PC_game_list">PC게임</a></h2>
+                        <h2><a href="#Mobile_game_list">모바일게임</a></h2>
+                    </div>
+
+                    <div class="game_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="game_01">
+                                        <div class="img_box">
+                                            <div class="img"></div>
+                                        </div>
+                                        <div class="name">메이플스토리</div>
+                                        <div class="text">모험과 재미가 가득한 2D 횡스크롤 MMORPG</div>
+                                        <div class="ex">
+                                            <div class="platform">
+                                                <div class="platform_log pc"><span class="blind">PC</span></div>
+                                            </div>
+                                            <div class="genre">RPG</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="game_02">
+                                        <div class="img_box">
+                                            <div class="img"></div>
+                                        </div>
+                                        <div class="name">EA SPORTS&trade; FIFA ONLINE 4</div>
+                                        <div class="text">축구, 그 이상을 경험할 수 있는 최고의 방법</div>
+                                        <div class="ex">
+                                            <div class="platform">
+                                                <div class="platform_log pc"><span class="blind">PC</span></div>
+                                            </div>
+                                            <div class="genre">스포츠</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="game_03">
+                                        <div class="img_box">
+                                            <div class="img"></div>
+                                        </div>
+                                        <div class="name">바람의 나라:연</div>
+                                        <div class="text">PC버전으로 쾌적하게 만나 바연!</div>
+                                        <div class="ex">
+                                            <div class="platform">
+                                                <div class="platform_log pc"><span class="blind">PC</span></div>
+                                            </div>
+                                            <div class="genre">RPG</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="game_04">
+                                        <div class="img_box">
+                                            <div class="img"></div>
+                                        </div>
+                                        <div class="name">던전앤파이터</div>
+                                        <div class="text"><strong>EVENT </strong>무제한 프리패스와 고스로리 아바타지급!</div>
+                                        <div class="ex">
+                                            <div class="platform">
+                                                <div class="platform_log pc"><span class="blind">PC</span></div>
+                                            </div>
+                                            <div class="genre">ACTION RPG</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="game_05">
+                                        <div class="img_box">
+                                            <div class="img"></div>
+                                        </div>
+                                        <div class="name">서든어택</div>
+                                        <div class="text"><strong>EVENT </strong>The Last Chance!</div>
+                                        <div class="ex">
+                                            <div class="platform">
+                                                <div class="platform_log pc"><span class="blind">PC</span></div>
+                                            </div>
+                                            <div class="genre">FPS</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="game_06">
+                                        <div class="img_box">
+                                            <div class="img"></div>
+                                        </div>
+                                        <div class="name">마비노기</div>
+                                        <div class="text"><strong>EVENT </strong>교역 맛집, 이리야 소식</div>
+                                        <div class="ex">
+                                            <div class="platform">
+                                                <div class="platform_log pc"><span class="blind">PC</span></div>
+                                            </div>
+                                            <div class="genre">RPG</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="game_07">
+                                        <div class="img_box">
+                                            <div class="img"></div>
+                                        </div>
+                                        <div class="name">마비노기영웅전</div>
+                                        <div class="text">중세 판타지 배경의 3D 액션 RPG</div>
+                                        <div class="ex">
+                                            <div class="platform">
+                                                <div class="platform_log pc"><span class="blind">PC</span></div>
+                                            </div>
+                                            <div class="genre">ACTION RPG</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="game_08">
+                                        <div class="img_box">
+                                            <div class="img"></div>
+                                        </div>
+                                        <div class="name">프리스타일</div>
+                                        <div class="text">더 화려하고 더 짜릿한 한판 승부</div>
+                                        <div class="ex">
+                                            <div class="platform">
+                                                <div class="platform_log pc"><span class="blind">PC</span></div>
+                                            </div>
+                                            <div class="genre">스포츠</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="game_09">
+                                        <div class="img_box">
+                                            <div class="img"></div>
+                                        </div>
+                                        <div class="name">크레이지아케이드</div>
+                                        <div class="text">#누구나#쉽게#캐주얼#인싸게임</div>
+                                        <div class="ex">
+                                            <div class="platform">
+                                                <div class="platform_log pc"><span class="blind">PC</span></div>
+                                            </div>
+                                            <div class="genre">캐주얼</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div id="Mobile_game_list">
+                    <h2>모바일 게임</h2>
+                    <div class="game_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="game_01">
+                                        <div class="img"></div>
+                                        <div class="name">던전앤파이터 모바일
+                                            <strong>EVENT</strong></div>
+                                        <div class="genre">ACTION RPG</div>
+                                        <div class="platform">
+                                            <div class="platform_log iphone">
+                                                <span class="blind">아이폰</span>
+                                            </div>
+                                            <div class="platform_log android">
+                                                <span class="blind">android</span>
+                                            </div>
+                                        </div>
+                                        <div class="state">
+                                            <div class="registration">사전등록</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="game_02">
+                                        <div class="img"></div>
+                                        <div class="name">블루아카이브
+                                            <strong>EVENT</strong></div>
+                                        <div class="genre">수집형 RPG</div>
+                                        <div class="platform">
+                                            <div class="platform_log iphone">
+                                                <span class="blind">아이폰</span>
+                                            </div>
+                                            <div class="platform_log android">
+                                                <span class="blind">android</span>
+                                            </div>
+                                        </div>
+                                        <div class="state">
+                                            <div class="open">OPEN</div>
+                                            <div class="update">UPDATE</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="game_03">
+                                        <div class="img"></div>
+                                        <div class="name">메이플스토리M
+                                            <strong>EVENT</strong></div>
+                                        <div class="genre">RPG</div>
+                                        <div class="platform">
+                                            <div class="platform_log iphone">
+                                                <span class="blind">아이폰</span>
+                                            </div>
+                                            <div class="platform_log android">
+                                                <span class="blind">android</span>
+                                            </div>
+                                        </div>
+                                        <div class="state">
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="game_04">
+                                        <div class="img"></div>
+                                        <div class="name">EA SPORTS&trade;FIFA Mobile</div>
+                                        <div class="genre">스포츠</div>
+                                        <div class="platform">
+                                            <div class="platform_log iphone">
+                                                <span class="blind">아이폰</span>
+                                            </div>
+                                            <div class="platform_log android">
+                                                <span class="blind">android</span>
+                                            </div>
+                                        </div>
+                                        <div class="state">
+                                            <div class="update">UPDATE</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="game_05">
+                                        <div class="img"></div>
+                                        <div class="name">카트라이더 러쉬플러스</div>
+                                        <div class="genre">레이싱</div>
+                                        <div class="platform">
+                                            <div class="platform_log iphone">
+                                                <span class="blind">아이폰</span>
+                                            </div>
+                                            <div class="platform_log android">
+                                                <span class="blind">android</span>
+                                            </div>
+                                        </div>
+                                        <div class="state">
+                                            <div class="update">UPDATE</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="game_06">
+                                        <div class="img"></div>
+                                        <div class="name">V4</div>
+                                        <div class="genre">MMORPG</div>
+                                        <div class="platform">
+                                            <div class="platform_log iphone">
+                                                <span class="blind">아이폰</span>
+                                            </div>
+                                            <div class="platform_log android">
+                                                <span class="blind">android</span>
+                                            </div>
+                                        </div>
+                                        <div class="state">
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="game_07">
+                                        <div class="img"></div>
+                                        <div class="name">바람의나라:연</div>
+                                        <div class="genre">MMORPG</div>
+                                        <div class="platform">
+                                            <div class="platform_log iphone">
+                                                <span class="blind">아이폰</span>
+                                            </div>
+                                            <div class="platform_log android">
+                                                <span class="blind">android</span>
+                                            </div>
+                                        </div>
+                                        <div class="state">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="top_button_box">
+            <ul>
+                <li>
+                    <div class="ucc_img"></div>
+                    <a href="#">
+                        <div class="ucc_videos">
+                            <div class="img_box">
+                                <div class="img"></div>
+                            </div>
+                            <div class="ucc_videos_text">
+                                <ul>
+                                    <li>NCC<span>Beta</span>
+                                        <button type="button" onclick="close()">최소화</button>
+                                    </li>
+                                    <li>넥슨 알고리즘이 추천하다넥! #마법</li>
+                                    <li>[마비노기/팁] 크롬바스 도우미! 정령 인터렉션! 길안내,준비물,이루샤 패턴,글라스기브넨 패턴 전부 알려줘요!</li>
+                                    <li><button type="button">다른영상보기</button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="top_button_box_icon ucc">
+                            <div class="top_button_box_icon ucc_white"></div>
+                        </div>
+                        <span> 추천동영상</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#PC_game_list">
+                        <div class="top_button_box_icon PC_button">
+                            <div class="top_button_box_icon PC_button_white"></div>
+                        </div>
+                        <span> PC게임</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#Mobile_game_list">
+                        <div class="top_button_box_icon mobile_button">
+                            <div class="top_button_box_icon mobile_button_white"></div>
+                        </div>
+                        <span> 모바일게임</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top_button_box_icon TOP_button">
+                            <div class="top_button_box_icon TOP_button_blue"></div>
+                        </div>
+                        <span>TOP</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <div class="notice">
+            <a href="#">
+                [공지] 12/19(일) 현대카드 본인확인 서비스 점검 안내
+            </a>
+        </div>
+
+        <div class="sns">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="use_terms">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">게임IP사용가이드</a></li>
+                <li><a href="#">게임시간선택제</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">전체서비스</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">LEVEL UP(넥슨폰트)</a></li>
+                <li><a href="#">광고문의</a></li>
+                <li><a href="#">넥슨PC방</a></li>
+            </ul>
+        </div>
+
+        <div class="language_box">
+            <div class="select_language">
+                <a href="#">
+                    <span>KOREA</span>
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+
+            <div class="choice_language">
+                <ul>
+                    <li>
+                        <a href="#">
+                            GlOBAL
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            THAILAND
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            TAIWAN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            KOREA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            JAPAN
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="adress">
+            <ul>
+                <li>(주)넥슨코리아</li>
+                <li>경기도 성남시 분당구 판교로 256번길 7</li>
+                <li>전화 : 1588-7701</li>
+                <li>팩스 : 0502-258-8322</li>
+            </ul>
+            <ul>
+                <li>E-mail : contact-us@nexon.cp.kr</li>
+                <li>사업자등록번호 : 220-87-17483호</li>
+                <li>통신판매업 신고번호 : 제2013-경기성남-1659호</li>
+                <li>
+                    <a href="#">사업자정보확인</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; NEXON Korea Corporation All Rights Reserved.</span>
+        </div>
+
+        <div class="mini_logo_box">
+            <div class="mini_logo"></div>
+        </div>
+
+    </footer>
+
+    <script>
+        var nav = document.querySelector(".nav_dummy_box");
+
+        function nav_open() {
+            nav.style.opacity = "1";
+            nav.style.visibility = "visible";
+
+        }
+
+        function nav_close() {
+            nav.style.opacity = "0";
+            nav.style.visibility = "hidden";
+        }
+
+    </script>
+
+</body>
+
+</html>

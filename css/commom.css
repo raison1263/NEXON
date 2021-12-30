@@ -1,0 +1,767 @@
+@charset "utf-8";
+
+/* 헤더구역, 푸터구역 등 공통구역에 대한 스타일 */
+
+/* 헤드 구역 */
+#header 
+{
+    width: 100%;
+    height: 63px;
+    background: #fff;
+}
+
+/* 네비 버튼 */
+#header .nav_but 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#header .nav_but button
+{
+    font-size: 18px;
+    padding: 23px 23px 21px;
+    color: #17191d;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+#header .nav_but:hover button
+{
+    color: #0077ff;
+}
+
+#header .nav_but button i span
+{
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+/* 메뉴 */
+.nav_dummy_box
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 101;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+#nav
+{
+    position: absolute;
+    width: 440px;
+    height: 100%;
+    background: #fff;
+}
+
+#nav .exit_but
+{
+    padding: 17px;
+}
+
+#nav .exit_but button
+{
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#nav .exit_but button:hover
+{
+    color: #0077ff;
+}
+
+#nav .nav_footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*  메뉴 타이틀 */
+#nav .game_view
+{
+    background: #fff;
+    padding: 25px 50px 5000px 40px;
+    border-top: 1px solid #9299ac;
+    font-size: 12px;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+#nav .game_view .title  ul
+{
+    display: inline-block;
+    padding-top: 9px;
+    font-weight: bold;
+    color: #9fa1a7;
+}
+
+#nav .game_view .title  ul li
+{
+    float: left;
+    margin-right:19px;
+}
+
+#nav .game_view .title  ul li a
+{
+    transition: all 0.3s;
+}
+
+#nav .game_view .title  ul li a:hover
+{
+    color: #0077ff;
+}
+
+#nav .game_view .title  ul li:nth-child(1) a
+{
+    color: #17191d;
+    border-bottom: 3px solid #17191d;
+}
+
+
+/* 고객센터 */
+#nav .game_view .title .service_center
+{
+    float: right;
+    padding: 6px 8px;
+    font-weight: bold;
+    color: #9fa1a7;
+    border: 2px solid #9fa1a7;
+    transition: all 0.3s;
+}
+
+#nav .game_view .title .service_center:hover
+{
+    color: #fff;
+    background:  #9fa1a7;
+}
+
+/*  게임리스트 */
+#nav .game_view .all_game
+{
+    padding-top: 30px;
+    color: #9fa1a7;
+}
+
+/* 각리스트 제목 */
+#nav .game_view .all_game ul h3
+{
+    color: #17191d;
+    padding-top: 30px;
+}
+
+/* 리스트 요소 */
+#nav .game_view .all_game ul li
+{
+    padding-top: 10px;
+}
+
+#nav .game_view .all_game ul li a
+{
+    transition: all 0.3s;
+}
+
+#nav .game_view .all_game ul li a:hover
+{
+    color: #0077ff;
+}
+
+#nav .game_view .all_game .list_01
+{
+    float: left;
+}
+
+#nav .game_view .all_game .list_02
+{
+    float: right;
+}
+
+#nav .info
+{
+    font-size: 12px;
+    color: #fff;
+    background: #222426;
+    padding: 30px 50px 20px 50px ;
+}
+
+#nav .info ul li 
+{
+    display: inline-block;
+    margin: 10px;
+    width: 83px;
+}
+
+#nav .info ul li a
+{
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover
+{
+    color: #0077ff;
+}
+
+#nav .info ul li a div
+{
+    margin-bottom: -3px;
+}
+
+
+/* 아이콘 */
+#nav .icon
+{
+    display: inline-block;
+    background-image: url(../img/set_service.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.my_info
+{   
+    width: 15px;
+    height: 15px;
+    background-position: -2px -1px;
+}
+
+.event
+{   
+    width: 14px;
+    height: 14px;
+    background-position: -2px -51px;
+}
+
+.cash
+{
+    width: 14px;
+    height: 14px;
+    background-position: -2px -101px;
+}
+
+.security_center_icon
+{
+    width: 14px;
+    height: 15px;
+    background-position: -2px -151px;
+}
+
+.notice_icon
+{
+    width: 14px;
+    height: 15px;
+    background-position: -2px -201px;
+}
+
+.play 
+{
+    width: 17px;
+    height: 15px;
+    background-position: 0px -250px;
+}
+
+.service_center_icon
+{
+    width: 14px;
+    height: 14px;
+    background-position: -2px -301px;
+}
+
+.calendar
+{
+    width: 14px;
+    height: 14px;
+    background-position: -3px -351px;
+}
+
+.plug
+{
+    width: 14px;
+    height: 14px;
+    background-position: -2px -401px;
+}
+
+
+/* 아이콘 호버시 색상 변경 */
+#nav .info ul li a .my_info_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 16px;
+    background-position: -52px -1px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover .my_info_blue
+{
+    opacity: 1;
+}
+
+#nav .info ul li a .event_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-position: -52px -51px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover .event_blue
+{
+    opacity: 1;
+}
+
+#nav .info ul li a .cash_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-position: -52px -101px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover .cash_blue
+{
+    opacity: 1;
+}
+
+#nav .info ul li a .security_center_icon_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-position: -52px -151px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover .security_center_icon_blue
+{
+    opacity: 1;
+}
+
+#nav .info ul li a .notice_icon_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-position: -52px -201px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover .notice_icon_blue
+{
+    opacity: 1;
+}
+
+#nav .info ul li a .play_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 15px;
+    background-position: -50px -251px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover .play_blue
+{
+    opacity: 1;
+}
+
+#nav .info ul li a .service_center_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 15px;
+    background-position: -52px -301px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover .service_center_blue
+{
+    opacity: 1;
+}
+
+#nav .info ul li a .calendar_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 15px;
+    background-position: -53px -351px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover .calendar_blue
+{
+    opacity: 1;
+}
+
+#nav .info ul li a .plug_blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 15px;
+    background-position: -52px -401px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .info ul li a:hover .plug_blue
+{
+    opacity: 1;
+}
+
+/* 전체서비스 버튼 */
+#nav .all_service a
+{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    background: #17191d;
+    transition: all 0.3s;
+}
+
+#nav .all_service a:hover
+{
+    background: #0077ff;
+}
+
+/* 로고 */
+#header .logo 
+{
+    text-align: center;
+    height: 63px;
+}
+
+/* 로그인 */
+#header .membership 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+}
+
+#header .membership ul li 
+{
+    display: inline-block;
+    letter-spacing: -1.5px;
+}
+
+#header .membership ul li a 
+{
+    display: block;
+    height: 63px;
+    padding: 24px 5px 0;
+    color: #17191d;
+}
+
+#header .membership ul li:nth-child(1) 
+{
+    padding: 0px 15px;
+}
+
+/* pc방 */
+#header .membership ul li .on 
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 10px;
+    padding: 0px 5px;
+    border-radius: 50px;
+    background: silver;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#header .membership ul li .hidden 
+{
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    height: 18px;
+    font-size: 11px;
+    padding: 1px 5px 0;
+    border-radius: 50px;
+    background: #1b1f24;
+    color: #fff;
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+#header .membership ul li:hover .hidden 
+{
+    opacity: 1;
+}
+
+/* 회원가입 */
+#header .membership ul li:nth-child(2) a 
+{
+    transition: all 0.2s;
+}
+
+#header .membership ul li:hover:nth-child(2) a 
+{
+    color: #0077ff;
+}
+
+/* 로그인 버튼 */
+#header .membership ul li:nth-child(3) a 
+{
+    width: 90px;
+    height: 40px;
+    padding: 7px 18px 0;
+    color: #080410;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #17191d;
+    transition: all 0.2s;
+}
+
+#header .membership ul li:hover:nth-child(3) a 
+{
+    color: #fff;
+    background: #0077ff;
+    border: 2px solid #0077ff;
+}
+
+/* 푸터 */
+#footer
+{
+    width: 100%;
+    /* height: 316px; */
+    margin-top: 200px;
+    background: #222426;
+    position: relative;
+}
+
+/* 공지사항 */
+#footer .notice
+{
+    padding: 25px 0 25px 35px;
+    display: inline-block;
+}
+
+#footer .notice a
+{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#footer .notice a:hover
+{
+   text-decoration: underline;
+}
+
+/* sns */
+#footer .sns
+{
+    float: right;
+    color: #fff;
+    padding-right: 35px;
+    font-size: 15px;
+}
+
+#footer .sns ul li
+{
+    float: left;
+    padding: 30px 8px ;
+}
+
+#footer .sns ul li a
+{
+    transition: all 0.3s;
+}
+
+#footer .sns ul li a:hover
+{
+    color:#0077ff;
+}
+
+/* 이용약관 */
+#footer .use_terms
+{
+    padding-top: 30px;
+    border-top: 1px solid #737881;
+}
+
+#footer .use_terms ul
+{
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+
+#footer .use_terms ul li
+{
+    display: inline-block;
+    font-size: 12px;
+}
+
+#footer .use_terms ul li a
+{
+    margin: 0 10px;
+    color: #F8F9FA;
+    transition: all 0.3s;
+}
+
+#footer .use_terms ul li a:hover
+{
+    color:#0077ff;
+}
+
+#footer .use_terms ul li + li 
+{
+    border-left: 1px solid #737881;
+}
+
+/* 언어설정 */
+#footer .language_box
+{
+   position: absolute;
+   top: 90px;
+   right: 35px;
+   width: 140px;
+}
+
+#footer .language_box a
+{
+    display: block;
+    background: #393a3c;
+    color: #F8F9FA;
+    font-size: 12px;
+    padding: 10px 10px 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#footer .language_box a:hover
+{
+    color:#0077ff;
+}
+
+#footer .language_box a i
+{
+    font-size: 15px;
+    padding-left: 50px;
+}
+
+#footer .language_box .choice_language
+{
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    width: 100%;
+   transition: all 0.3s;
+}
+
+#footer .language_box .choice_language ul li a
+{
+    background: #17191d;
+}
+
+/* 후에 수정 */
+#footer .language_box .choice_language
+{
+   opacity: 0;
+   visibility: hidden;
+}
+
+#footer .language_box .select_language:hover + .choice_language
+{
+   opacity: 1;
+   visibility: visible;
+}
+
+#footer .language_box .choice_language:hover
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 회사 정보 */
+#footer .adress
+{
+    margin: 20px 0 0 30px;
+}
+
+#footer .adress ul li
+{
+    display: inline-block;
+    font-size: 11px;
+    color: #737881;
+}
+
+#footer .adress ul li a
+{
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+#footer .adress ul li a:hover
+{
+    text-decoration: underline;
+    color:#0077ff;
+}
+
+/* 카피라이터 */
+#footer .copyright
+{
+    /* display: inline-block; */
+    font-size: 11px;
+    color: #737881;
+    padding: 5px 0 10px 30px;
+}
+
+/* 회사로고 */
+#footer .mini_logo_box
+{
+    padding: 10px 0 50px 30px;
+}
+
+#footer .mini_logo
+{   
+    background-image: url(../img/set_footer.png);
+    width: 68px;
+    height: 25px;
+    background-position: 0px 0px;
+}
